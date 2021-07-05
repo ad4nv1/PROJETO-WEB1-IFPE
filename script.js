@@ -39,9 +39,16 @@ function cadCliente(){
     }
 }
 
-apresentacao.textContent = (" seja bem vindo" + nomeCad.value + sobrenomeCad.value);
+let msgTelauser = document.querySelector("#apresent")
+//apresentacao.textContent = (" seja bem vindo" + nomeCad.value + sobrenomeCad.value);
 
+let mensagemBom = document.createElement("sss");
+//mensagemBom.classList.add('msgi');
+mensagemBom.innerText = `Olá ${nomeCad.value} ${sobrenomeCad.value} Seja bem vindo 
+aqui você irá adquirir os melhores produtos digitais do mercado
+com toda assistencia e qualidade que a mmmm tem para lhe proporcionar`;
 
+msgTelauser.appendChild(mensagemBom);
 
      // ** IGNORA O QUE TA DAQUI P BAIXO ** (LOUCURA PESSOAL QUE VOU TENTAR MAIS TARDE)
  //class ValidarLogin {
