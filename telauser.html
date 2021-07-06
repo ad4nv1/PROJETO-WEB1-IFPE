@@ -6,12 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="style2.css">
+    
 </head>
 <body>
-    <h1 id="apresenta"></h1>
-        <div id = "apresent"></div>
-    </h1>
-    
+    <h1 id="boasVindas"></h1>
+    <h3 id="infoEdition">Clique no botão<br>
+        abaixo e personalize<br>
+         a tela como preferir</h3>
+    <button onclick="editarTe()" id="btn-ShowEdition">Editar</button>
+    <form name="editarTela" id="editarTela" class = "editarTe">
+        <label>Nome do cliente:</label><br>
+        <input type="text" name="Cnome" id="Cnome" size="20"><br><br>
+        <label>Background:</label><br>
+        <input type="radio" id="radio-Corfuazul" name="Ccorfundo" onclick="corFundo('#1E90FF')">Azul<br>
+        <input type="radio" id="radio-Corfurosa" name="Ccorfundo" onclick="corFundo('#FF00FF')">rosa<br>
+        <input type="radio" id="radio-Corfuverde" name="Ccorfundo" onclick="corFundo('#32CD32')">verde<br>
+        <input type="radio" id="radio-Corfucinza" name="Ccorfundo" onclick="corFundo('#808080')">Cinza<br>
+        <label>Cor da fonte:</label><br>
+        <input type="radio" name="Ccorfonte" id="radio-Corfobranca" onclick="corFonte('#fff')">branco<br>
+        <input type="radio" name="Ccorfonte" id="radio-Corfopreta" onclick="corFonte('#000')">Preto<br>
+        <input type="button" value="Gravar Edição" id="btn-salvarEdicao" onclick="salvarEdicao()">
+
+
+        
+    </form>
 </body>
 <script src="script.js"></script>
 </html>
