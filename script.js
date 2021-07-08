@@ -24,7 +24,7 @@ function cadCliente(){
   else{
   localStorage.setItem("acesso", true);
 
-  window.location.href = "index.html";
+  window.location.href = "loginn.html";
 
   }
   localStorage.setItem("emailLoginCliente", emailCad.value);
@@ -207,7 +207,7 @@ function showLogin(){
 
 function encaminharLog(){
 
-  window.location.href = "index.html";
+  window.location.href = "loginn.html";
 
 
 }
