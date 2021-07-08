@@ -23,17 +23,22 @@
                 </div>
 
                 <div class="input-field">
-                    <input type="text" id="email" placeholder="Digite seu E-mail">
+                    <input type="text" id="emailRecuLog" placeholder="Digite seu E-mail">
                     <label for="email">E-mail</label>
                 </div>
 
-                <div>
-                    <button onclick="evento()">Confirmar</button>
-                </div>
+               
 
             </form>
+            
+                <button onclick="envioDeEmailRecu()" id="btn-envioRecu">Confirmar</button>
+            
+            <button onclick="encaminharLog()" id="btn-enviovoltar">Voltar</button>
 
-        </div>  
+          
+        <script src="script.js"></script>
+        
+        
 
     </body>
 </html>
